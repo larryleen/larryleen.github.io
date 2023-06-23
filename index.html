@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>html5入门</title>
+    </head>
+    <body>
+        <a name="top"></a>
+        <!--
+            注释
+        -->
+        <marquee id="TOP" loop="5" bgcolor="Beige"><font color="Burlywood" size="5">本网站仅供个人学习使用</font></marquee>
+        <input type="text">
+        <div>
+            <h3>小技巧</h3>
+            <p>VScode内 ctrl+shift+k 可以快速删除一整行</p>
+            <p>ctrl+Enter 可以快速换行</p>
+            <p>Alt+shift+下（上） 可以快速复制到下（上）一行</p>
+            <p>ctrl+/ 可以快速注释</p>
+            <p>查阅官方文档W3C (镜像W3school,MDN)</p>
+        </div>
+        <div>
+            <h1>html5入门</h1>
+                <h2>基本结构</h2>
+                    <p>html的基本结构需要包括文档说明，根标签，head子标签，body子标签。</p>
+                    <p>如下为基本结构演示:</p>
+                    <p>&lt;!DOCTYPE html&gt;</p>
+                    <p>&lt;html&gt;</p>
+                    <p>&lt;head&gt;</p>
+                    <p>&lt;meta charset="UTF-8"&gt;</p>
+                    <p>&lt;title&gt;</p>
+                    <p>&lt;/title&gt;</p>
+                    <p>&lt;/head&gt;</p>
+                    <p>&lt;body&gt;</p>
+                    <p>&lt;h1&gt;&lt;/h1&gt;</p>
+                    <p>&lt;p&gt;&lt;/p&gt;</p>
+                    <p>&lt;/body&gt;</p>
+                    <p>&lt;/html&gt;</p>
+                <h2>自结束标签</h2>
+                    <p>自结束标签是指不用尾标签作为结束的标签。</p>
+                    <p>以下几种格式都是正确的：</p>
+                    <p>&lt;img&gt;</p>
+                    <p>&lt;img /&gt;</p>
+                    <p>&lt;input&gt;</p>
+                    <p>&lt;input /&gt;</p>
+                <h2>注释</h2>
+                    <p>注释结构如下：</p>
+                    <p>&lt;!-- 注释内容 --&gt;</p>
+                <h2>标签属性</h2>
+                    <p>设置文本属性，属性是一个名值对结构，例如：</p>
+                    <p>&lt;font color="yellow" size='5'&gt;被设置的文本&lt;/font&gt;</p>
+                <h2>文档声明</h2>
+                    <p>用来给浏览器提供解析方式，如下：</p>
+                    <p>&lt;!DOCTYPE html&gt;</p>
+                <h2>字符编码</h2>
+                    <p>标签meta协助指定解析网页字符编码格式:</p>
+                    <p>&lt;meta charset="UTF-8"&gt;</p>
+                <h2>语言设置</h2>
+                    <p>html标签属性lang可以设置语言种类和地区：</p>
+                    <p>&lt;html lang="zh-CN"&gt;</p>
+                <h2>排版标签</h2>
+                    <p>控制段落标签&lt;div&gt;</p>
+                    <p>&lt;div&gt; &lt;/div&gt;</p>
+                <h2>语义化标签</h2>
+                    <p>虽然可以通过css控制表现，但是语义化标签：</p>
+                    <p>1.代码可读性强</p>
+                    <p>2.有利于SEO优化</p>
+                    <p>3.方便特殊设备解析</p>
+                <h2>块级元素和行内元素</h2>
+                    <p>块级元素占一行，行内元素不独占一行</p>
+                    <p>块级元素包括（根据学习进度进行更新）:</p>
+                    <p>&lt;marquee&gt;</p>
+                    <p>&lt;h1-h6&gt;</p>
+                    <p>&lt;p&gt;</p>
+                    <p>&lt;div&gt;</p>
+                    <p>行内元素包括（根据学习进度进行更新）:</p>
+                    <p>&lt;input&gt;</p>
+                    <p>&lt;span&gt;</p>
+                    <p>1.块级元素内可以写块级元素、行内元素等</p>
+                    <p>2.行内元素内可以写行内元素，不能写块级元素</p>
+                    <p>3.h1-h6不能直接互相嵌套</p>
+                    <p>4.p标签中不能写块元素</p>
+                    <p>5.不适用废弃的标签</p>
+                <h2>常用文本标签</h2>
+                    <p>&lt;em&gt;<em>着重阅读的内容</em></p>
+                    <p>&lt;strong&gt;<strong>更加重要的内容</strong></p>
+                    <p>&lt;span&gt;<span>包裹短语的通用容器</span></p>
+                <h2>不常用文本标签</h2>
+                    <p>&lt;cite&gt;<cite>作品标题</cite></p>
+                    <p>&lt;dfn&gt;<dfn></dfn>专属名词</dfn></p>
+                    <p>&lt;del&gt;<del>删除的文本</del></p>
+                    <p>&lt;ins&gt;<ins>插入的文本</ins></p>
+                    <p>&lt;sub&gt;<sub>下标文字</sub></p>
+                    <p>&lt;sup&gt;<sup>上标文字</sup></p>
+                    <p>&lt;code&gt;<code>代码块</code></p>
+                    <p>&lt;samp&gt;<samp>提取上下文某些内容，额外注释一下</samp></p>
+                    <p>&lt;kbd&gt;<kbd>文本内容从键盘上输入</kbd></p>
+                    <p>&lt;abbr&gt;表示缩写，如：<abbr title="C++">CPP</abbr></p>
+                    <p>&lt;bdo&gt;更改文本方向，其中dir标签可选ltr，rtl，如：<bdo dir="rtl">CPP</bdo></p>
+                    <p>&lt;var&gt;标记变量 int<var> x</var></p>
+                    <p>&lt;small&gt;<small>附属细则</small></p>
+                    <p>&lt;b&gt;<small>摘要</small></p>
+                    <p>&lt;i&gt;<i>呈现字体图标</i></p>
+                    <p>&lt;u&gt;<u>与正常语义有反差</u></p>
+                    <p>&lt;q&gt;<q>短引用</q></p>
+                    <p>&lt;blockquote&gt;</p>
+                    <blockquote>--长引用</blockquote>
+                    <!--
+                        块元素
+                    -->
+                    <p>&lt;address&gt;</p>
+                    <address>地址</address>
+                    <!--
+                        块元素
+                    -->
+                <h2>图片标签</h2>
+                    <p>&lt;img width="XXX" height="XXX" src="XXX" alt="XXX"&gt;</p>
+                    <p>alt标签可以：</p>
+                    <p>1.给图片打标签。</p>
+                    <p>2.未加载图片时作为文本呈现</p>
+                    <img width="300" src="preview.jpg" alt="Space">
+                <h2>超链接</h2>
+                    <p>1.跳转页面</p>
+                    <p>原页签上打开如：&lt;a href="XXXX" target="_self（该标签时默认的）"&gt;文字描述&lt;/a&gt;</p>
+                    <a href="https://www.bilibili.com/">进入bilibili（原页签上打开）</a>
+                    <p>原页签上打开如：&lt;a href="XXXX" target="_blank"&gt;文字描述&lt;/a&gt;</p>
+                    <a href="https://www.bilibili.com/" target="_blank">进入bilibili（新页签上打开）</a>
+                    <!--
+                        a标签可以含有除了自己以外的所有行内元素，块元素
+                    -->
+                    <p>2.跳转文件</p>
+                    <p>href处改为资源所在链接(如jpg,mp4,pdf,gif等文件)，加入download属性可以触发强制下载。</p>
+                    <a href="./河海大学  南京符契信息技术有限公司.pdf" target="_blank" download="企划书">河海大学产品企划书</a>
+                <h2>跳转锚点</h2>
+                    <p>1.实现页面内定位，搭配定位处标签使用：</p>
+                    <p>&lt;a name="XXXX"&gt;&lt;/a&gt;</p>
+                    <p>&lt;a href="#XXXX"&gt;&lt;/a&gt;</p>
+                    <a href="#top">使用name跳转顶部</a>
+                    <p>2.id作为一个通用属性可以实现锚点定位，比如：</p>
+                    <a href="#TOP">使用id跳转顶部</a>
+                    <p>3.回到顶部可以有特殊的写法</p>
+                    <p>&lt;a href="#"&gt;&lt;/a&gt;</p>
+                    <a href="#">跳转顶部</a>
+                    <p>4.实现页面外跳转：</p>
+                    <p>&lt;a href="./XXX.html#XXX"&gt;&lt;/a&gt;</p>
+                    <a href="./test1.html#onlyp" target="_blank">跳转到另一个页面</a>
+                    <p>5.实现css,js脚本超链接</p>
+                    <p>&lt;a href="javasript:XXX;"&gt;&lt;/a&gt;</p>
+                    <a href="javascript:alert(123);">单击弹窗</a>
+        </div>
+    </body>
+</html>
